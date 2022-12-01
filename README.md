@@ -44,17 +44,68 @@
 
 Ход работы:
 - В созданном Unity-проекте были внесены изменения в файл yaml-агента:
-Поменял в economic strength с 1 на 10
+1) Поменял в economic strength с 1 на 10
 Данные из консоли
 [INFO] Economic. Step: 5000. Time Elapsed: 75.437 s. No episode was completed since last summary. Training.
+
 [INFO] Economic. Step: 10000. Time Elapsed: 95.690 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.006.
+
 [INFO] Economic. Step: 15000. Time Elapsed: 124.619 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.018.
+
 [INFO] Economic. Step: 20000. Time Elapsed: 154.822 s. No episode was completed since last summary. Training.
+
 [INFO] Economic. Step: 25000. Time Elapsed: 177.429 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.030.
+
 [INFO] Economic. Step: 30000. Time Elapsed: 197.914 s. Mean Reward: 0.833. Std of Reward: 0.553. Training. ELO: 1199.292.
+
 [INFO] Economic. Step: 35000. Time Elapsed: 220.908 s. No episode was completed since last summary. Training.
+
 [INFO] Economic. Step: 40000. Time Elapsed: 255.577 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1199.055.
+
 [INFO] Economic. Step: 45000. Time Elapsed: 282.403 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1199.067.
+
+Увеличение параметра strength привело к увеличению степени вознаграждения, а также повысило обучаемость модели.
+
+2) Поменял num_epoch с 3 до 10 
+Данные из консоли 
+[INFO] Economic. Step: 5000. Time Elapsed: 42.273 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 10000. Time Elapsed: 67.037 s. Mean Reward: 0.000. Std of Reward: 1.000. Training. ELO: 1196.340.
+
+[INFO] Economic. Step: 15000. Time Elapsed: 107.998 s. Mean Reward: 0.167. Std of Reward: 0.986. Training. ELO: 1191.519.
+
+[INFO] Economic. Step: 20000. Time Elapsed: 129.559 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 25000. Time Elapsed: 157.050 s. Mean Reward: 0.167. Std of Reward: 0.986. Training. ELO: 1186.198.
+
+[INFO] Economic. Step: 30000. Time Elapsed: 193.161 s. Mean Reward: 0.667. Std of Reward: 0.745. Training. ELO: 1182.795.
+
+[INFO] Economic. Step: 35000. Time Elapsed: 250.326 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 40000. Time Elapsed: 294.855 s. Mean Reward: 0.500. Std of Reward: 0.866. Training. ELO: 1180.392.
+
+Увеличение параметра num_epoch привело к увеличению количества опытов необходимых для обновления схемы обучения и не оказало существенного влияния на обучаемость модели.
+
+3) Поменял epsilpon с 0.1 на 0.01
+Данные консоли:
+[INFO] Economic. Step: 5000. Time Elapsed: 73.559 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 10000. Time Elapsed: 94.626 s. Mean Reward: -0.333. Std of Reward: 0.943. Training. ELO: 1196.007.
+
+[INFO] Economic. Step: 15000. Time Elapsed: 117.898 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1192.019.
+
+[INFO] Economic. Step: 20000. Time Elapsed: 140.573 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 25000. Time Elapsed: 164.051 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1192.032.
+
+[INFO] Economic. Step: 30000. Time Elapsed: 185.340 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1192.044.
+
+[INFO] Economic. Step: 35000. Time Elapsed: 207.775 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 40000. Time Elapsed: 229.698 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1192.057.
+
+
+
 
 
 
