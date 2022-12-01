@@ -104,9 +104,51 @@
 
 [INFO] Economic. Step: 40000. Time Elapsed: 229.698 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1192.057.
 
+Уменьшение параметра epsilon привело к уменьшению скорости изменения политики обучения и привело к увеличению скорости обучения
+
+4) Поменял batch_size с 1024 на 2048
+
+Данные консоли:
+[INFO] Economic. Step: 5000. Time Elapsed: 43.582 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 10000. Time Elapsed: 71.032 s. Mean Reward: 0.000. Std of Reward: 1.000. Training. ELO: 1195.757.
+
+[INFO] Economic. Step: 15000. Time Elapsed: 100.296 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1194.019.
+
+[INFO] Economic. Step: 20000. Time Elapsed: 121.376 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 25000. Time Elapsed: 143.708 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1194.031.
+
+[INFO] Economic. Step: 30000. Time Elapsed: 174.313 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1194.044.
+
+[INFO] Economic. Step: 35000. Time Elapsed: 195.152 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 40000. Time Elapsed: 215.962 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1194.056
+
+Увеличение параметра batch_size привело к увеличению попыток в одной итерации и положительно сказалось на динамике обучения модели
+
+5) Поменял lambd с 0.95 на 0.5
+
+Данные консоли:
+
+[INFO] Economic. Step: 5000. Time Elapsed: 65.672 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 10000. Time Elapsed: 85.043 s. Mean Reward: 0.667. Std of Reward: 0.745. Training. ELO: 1198.923.
+
+[INFO] Economic. Step: 15000. Time Elapsed: 107.166 s. Mean Reward: 0.500. Std of Reward: 0.866. Training. ELO: 1196.102.
+
+[INFO] Economic. Step: 20000. Time Elapsed: 142.625 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 25000. Time Elapsed: 167.861 s. Mean Reward: 0.833. Std of Reward: 0.553. Training. ELO: 1194.864.
+
+[INFO] Economic. Step: 30000. Time Elapsed: 187.189 s. Mean Reward: 0.500. Std of Reward: 0.866. Training. ELO: 1192.043.
+
+[INFO] Economic. Step: 35000. Time Elapsed: 208.109 s. No episode was completed since last summary. Training.
+
+[INFO] Economic. Step: 40000. Time Elapsed: 236.604 s. Mean Reward: 0.667. Std of Reward: 0.745. Training. ELO: 1189.473
 
 
-
+Уменьшение параметра lambd не оказало положительного влияния на обучаемость модели
 
 
 ## Задание 2
