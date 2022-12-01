@@ -36,16 +36,20 @@
 - ✨Magic ✨
 
 ## Цель работы
-Научиться обучать ML-Agent на примере интеграции экономической системы в Unity проект
+Научиться обучать ML-Agent на примере интеграции экономической системы в Unity-проект
 
 ## Задание 1
 ### Измените параметры файла. yaml-агента и определить какие параметры и 
 как влияют на обучение модели.
 
 Ход работы:
+
 - В созданном Unity-проекте были внесены изменения в файл yaml-агента:
+
 1) Поменял в economic strength с 1 на 10
+
 Данные из консоли
+
 [INFO] Economic. Step: 5000. Time Elapsed: 75.437 s. No episode was completed since last summary. Training.
 
 [INFO] Economic. Step: 10000. Time Elapsed: 95.690 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.006.
@@ -67,7 +71,9 @@
 Увеличение параметра strength привело к увеличению степени вознаграждения, а также повысило обучаемость модели.
 
 2) Поменял num_epoch с 3 до 10 
+
 Данные из консоли 
+
 [INFO] Economic. Step: 5000. Time Elapsed: 42.273 s. No episode was completed since last summary. Training.
 
 [INFO] Economic. Step: 10000. Time Elapsed: 67.037 s. Mean Reward: 0.000. Std of Reward: 1.000. Training. ELO: 1196.340.
@@ -87,7 +93,9 @@
 Увеличение параметра num_epoch привело к увеличению количества опытов необходимых для обновления схемы обучения и оказало положительное влияние на обучаемость модели.
 
 3) Поменял epsilpon с 0.1 на 0.01
+
 Данные консоли:
+
 [INFO] Economic. Step: 5000. Time Elapsed: 73.559 s. No episode was completed since last summary. Training.
 
 [INFO] Economic. Step: 10000. Time Elapsed: 94.626 s. Mean Reward: -0.333. Std of Reward: 0.943. Training. ELO: 1196.007.
@@ -109,6 +117,7 @@
 4) Поменял batch_size с 1024 на 2048
 
 Данные консоли:
+
 [INFO] Economic. Step: 5000. Time Elapsed: 43.582 s. No episode was completed since last summary. Training.
 
 [INFO] Economic. Step: 10000. Time Elapsed: 71.032 s. Mean Reward: 0.000. Std of Reward: 1.000. Training. ELO: 1195.757.
@@ -190,8 +199,8 @@
 
 ## Выводы
 
-В лабораторной работе я познакомился с такой математической моделью как перцептрон, также я научился реализвывать его работу в среде Unity
-на примере логических операторов: OR, AND, NAND, XOR.
+В лабораторной работе я изучил обучение ML-Agent на примере интеграции экономической системы в Unity-проект. 
+
 | Plugin | README |
 | ------ | ------ |
 | Dropbox | [plugins/dropbox/README.md][PlDb] |
