@@ -70,27 +70,27 @@
 
 Увеличение параметра strength привело к увеличению степени вознаграждения, а также повысило обучаемость модели.
 
-2) Поменял num_epoch с 3 до 10 
+2) Поменял num_epoch с 3 до 1 
 
 Данные из консоли 
 
-[INFO] Economic. Step: 5000. Time Elapsed: 42.273 s. No episode was completed since last summary. Training.
+[INFO] Economic. Step: 5000. Time Elapsed: 34.856 s. No episode was completed since last summary. Training.
 
-[INFO] Economic. Step: 10000. Time Elapsed: 67.037 s. Mean Reward: 0.000. Std of Reward: 1.000. Training. ELO: 1196.340.
+[INFO] Economic. Step: 10000. Time Elapsed: 54.201 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.006.
 
-[INFO] Economic. Step: 15000. Time Elapsed: 107.998 s. Mean Reward: 0.167. Std of Reward: 0.986. Training. ELO: 1191.519.
+[INFO] Economic. Step: 15000. Time Elapsed: 74.114 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.018.
 
-[INFO] Economic. Step: 20000. Time Elapsed: 129.559 s. No episode was completed since last summary. Training.
+[INFO] Economic. Step: 20000. Time Elapsed: 94.901 s. No episode was completed since last summary. Training.
 
-[INFO] Economic. Step: 25000. Time Elapsed: 157.050 s. Mean Reward: 0.167. Std of Reward: 0.986. Training. ELO: 1186.198.
+[INFO] Economic. Step: 25000. Time Elapsed: 114.981 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.030.
 
-[INFO] Economic. Step: 30000. Time Elapsed: 193.161 s. Mean Reward: 0.667. Std of Reward: 0.745. Training. ELO: 1182.795.
+[INFO] Economic. Step: 30000. Time Elapsed: 140.211 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.042.
 
-[INFO] Economic. Step: 35000. Time Elapsed: 250.326 s. No episode was completed since last summary. Training.
+[INFO] Economic. Step: 35000. Time Elapsed: 163.694 s. No episode was completed since last summary. Training.
 
-[INFO] Economic. Step: 40000. Time Elapsed: 294.855 s. Mean Reward: 0.500. Std of Reward: 0.866. Training. ELO: 1180.392.
+[INFO] Economic. Step: 40000. Time Elapsed: 182.538 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1200.054.
 
-Увеличение параметра num_epoch привело к увеличению количества опытов необходимых для обновления схемы обучения и оказало положительное влияние на обучаемость модели.
+Уменьшение параметра num_epoch оказало положительное влияние на обучаемость модели, так как среднее вознаграждение возрасло по сравнению начальной конфигурацией yaml файла. 
 
 3) Поменял epsilpon с 0.1 на 0.01
 
@@ -112,7 +112,7 @@
 
 [INFO] Economic. Step: 40000. Time Elapsed: 229.698 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1192.057.
 
-Уменьшение параметра epsilon привело к уменьшению скорости изменения политики обучения и привело к увеличению скорости обучения
+Уменьшение параметра epsilon привело к уменьшению скорости изменения политики обучения и привело к увеличению скорости обучения, так как среднее вознаграждение возрасло по сравнению начальной конфигурацией yaml
 
 4) Поменял batch_size с 1024 на 2048
 
@@ -134,7 +134,7 @@
 
 [INFO] Economic. Step: 40000. Time Elapsed: 215.962 s. Mean Reward: 1.000. Std of Reward: 0.000. Training. ELO: 1194.056
 
-Увеличение параметра batch_size привело к увеличению попыток в одной итерации и положительно сказалось на динамике обучения модели
+Увеличение параметра batch_size привело к увеличению попыток в одной итерации и положительно сказалось на динамике обучения модели, так как среднее вознаграждение возрасло по сравнению начальной конфигурацией yaml
 
 5) Поменял lambd с 0.95 на 0.5
 
@@ -167,33 +167,33 @@
 
 ![image](https://user-images.githubusercontent.com/114522298/205151321-90fd0e50-39cc-4d28-844b-20af21817d58.png)
 
-График накопленного вознаграждения растёт, следовательно изменение положительно сказалось на обучаемости модели
+График накопленного вознаграждения(Cumulative Reward) растёт, а график следовательно изменение положительно сказалось на обучаемости модели
 
 
-2) Поменял num_epoch с 3 до 10 
+2) Поменял num_epoch с 3 до 1 
 
-![image](https://user-images.githubusercontent.com/114522298/205151814-edfb3b46-fee1-43f9-adfe-3a7cfffae7b0.png)
+![image](https://user-images.githubusercontent.com/114522298/205332185-9c0aa289-88bd-4376-8df7-36b61a9261a8.png)
 
-График накопленного вознаграждения растёт, следовательно изменение положительно сказалось на обучаемости модели
+График накопленного вознаграждения(Cumulative Reward) растёт, следовательно изменение положительно сказалось на обучаемости модели
 
 
 3) Поменял epsilpon с 0.1 на 0.01
 
 ![image](https://user-images.githubusercontent.com/114522298/205152142-aed29981-2e6a-47b8-978d-b4e09c66bf88.png)
 
-График накопленного вознаграждения растёт, следовательно изменение положительно сказалось на обучаемости модели
+График накопленного вознаграждения(Cumulative Reward) растёт, следовательно изменение положительно сказалось на обучаемости модели
 
 4) Поменял batch_size с 1024 на 2048
 
 ![image](https://user-images.githubusercontent.com/114522298/205152557-39aa5141-87c4-4760-bc54-54a71f1bd59c.png)
 
-График накопленного вознаграждения растёт, следовательно изменение положительно сказалось на обучаемости модели
+График накопленного вознаграждения(Cumulative Reward) растёт, следовательно изменение положительно сказалось на обучаемости модели
 
 5) Поменял lambd с 0.95 на 0.5
 
 ![image](https://user-images.githubusercontent.com/114522298/205152715-64b7ff4e-ad01-4786-9575-9ff9c43d0b38.png)
 
-График накопленного вознаграждения растёт, следовательно изменение положительно сказалось на обучаемости модели
+График накопленного вознаграждения(Cumulative Reward) не имеет стабильного роста, следовательно изменение не дало положительно эффекта для обучаемости модели
 
 
 
