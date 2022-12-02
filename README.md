@@ -185,33 +185,37 @@
 ## Задание 2
 ### Опишите результаты, выведенные в TensorBoard
 
-1) Поменял в economic strength с 1 на 10
+##1) Поменял в economic strength с 1 на 10
 
 ![image](https://user-images.githubusercontent.com/114522298/205151321-90fd0e50-39cc-4d28-844b-20af21817d58.png)
 
 График накопленного вознаграждения(Cumulative Reward) растёт, а график Value Loss уменьшается, следовательно изменение положительно сказалось на обучаемости модели
 
 
-2) Поменял num_epoch с 3 до 1 
+
+##2) Поменял num_epoch с 3 до 1 
 
 ![image](https://user-images.githubusercontent.com/114522298/205332185-9c0aa289-88bd-4376-8df7-36b61a9261a8.png)
 
 График накопленного вознаграждения(Cumulative Reward) растёт, а график Value Loss уменьшается, следовательно изменение положительно сказалось на обучаемости модели
 
 
-3) Поменял epsilpon с 0.1 на 0.01
+
+##3) Поменял epsilpon с 0.1 на 0.01
 
 ![image](https://user-images.githubusercontent.com/114522298/205152142-aed29981-2e6a-47b8-978d-b4e09c66bf88.png)
 
 График накопленного вознаграждения(Cumulative Reward) растёт, а график Value Loss уменьшается, следовательно изменение положительно сказалось на обучаемости модели
 
-4) Поменял batch_size с 1024 на 2048
+
+##4) Поменял batch_size с 1024 на 2048
 
 ![image](https://user-images.githubusercontent.com/114522298/205152557-39aa5141-87c4-4760-bc54-54a71f1bd59c.png)
 
 График накопленного вознаграждения(Cumulative Reward) растёт, а график Value Loss уменьшается, следовательно изменение положительно сказалось на обучаемости модели
 
-5) Поменял lambd с 0.95 на 0.5
+
+## 5) Поменял lambd с 0.95 на 0.5
 
 ![image](https://user-images.githubusercontent.com/114522298/205152715-64b7ff4e-ad01-4786-9575-9ff9c43d0b38.png)
 
